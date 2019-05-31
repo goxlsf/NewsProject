@@ -29,4 +29,8 @@ public interface NewsDAO {
 
     List<News> selectByUserIdAndOffset(@Param("userId") int userId, @Param("offset") int offset,
                                        @Param("limit") int limit);
+
+    @Select({"select ", SELECT_FIELDS , " from ", TABLE_NAME, " where module_id=#{moduleId} ORDER BY comment_count DESC"})
+    List<News> selectByUserIdAndModuleId(@Param("userId") int userId, @Param("offset") int offset,
+                                       @Param("limit") int limit, @Param("moduleId") int moduleId);
 }

@@ -3,10 +3,6 @@ package com.nowcoder.service;
 import com.nowcoder.dao.NewsDAO;
 import com.nowcoder.model.News;
 import com.nowcoder.util.ToutiaoUtil;
-import org.apache.commons.lang.ArrayUtils;
-import org.apache.commons.lang.StringUtils;
-import org.apache.tomcat.util.http.fileupload.FileUtils;
-import org.apache.velocity.texen.util.FileUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
@@ -29,7 +25,9 @@ public class NewsService {
     public List<News> getLatestNews(int userId, int offset, int limit) {
         return newsDAO.selectByUserIdAndOffset(userId, offset, limit);
     }
-
+    public List<News> getLatestSortNews(int userId, int offset, int limit, int moduleId) {
+        return newsDAO.selectByUserIdAndModuleId(userId, offset, limit, moduleId);
+    }
     public int addNews(News news) {
         newsDAO.addNews(news);
         return news.getId();
