@@ -1,62 +1,32 @@
-package com.nowcoder.controller;
+package com.nowcoder;
 
-import com.nowcoder.model.*;
-import com.nowcoder.service.*;
-import com.nowcoder.util.ToutiaoUtil;
 import org.ansj.app.keyword.KeyWordComputer;
 import org.ansj.app.keyword.Keyword;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.util.StreamUtils;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
-import org.springframework.web.util.HtmlUtils;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.SpringApplicationConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import javax.servlet.http.HttpServletResponse;
 import java.io.*;
-import java.util.*;
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.Set;
 
-/**
- * Created by nowcoder on 2016/7/2.
- */
-@Controller
-public class NewsController {
-    private static final Logger logger = LoggerFactory.getLogger(NewsController.class);
-    @Autowired
-    NewsService newsService;
-
-    @Autowired
-    QiniuService qiniuService;
-
-    @Autowired
-    HostHolder hostHolder;
-
-    @Autowired
-    UserService userService;
-
-    @Autowired
-    CommentService commentService;
-
-    @Autowired
-    LikeService likeService;
-
-    private int max(int[] v) {
-        int a = 0, b = 0;
+@RunWith(SpringJUnit4ClassRunner.class)
+@SpringApplicationConfiguration(classes = ToutiaoApplication.class)
+public class classifyTest {
+    public int max(int[] v){
+        int a=0,b=0;
         for (int i = 1; i < 15; i++) {
-            if (v[i] > b) {
-                b = v[i];
-                a = i;
+            if (v[i]>b){
+                b=v[i];
+                a=i;
             }
         }
-            return a;
+        return a;
     }
-
-    public int demo(String Title,String Content) throws IOException {
-        String title = Title;
-        String content = Content;
+    @Test
+    public void demo() throws IOException {
         System.out.println("获取训练数据：");
         String stopWordTable="G:\\gongcheng\\stop\\13.txt";
         FileInputStream in = new FileInputStream(stopWordTable);
@@ -129,8 +99,18 @@ public class NewsController {
         }
 
         int[][] val = new int[200][200];
+        String title="孕妈妈在怀孕多久后才会显怀，显怀晚的原因你都知道吗？";
+        String content= "对于显怀了孕妈妈可能会有着什么独特的见解，孕中期左右孕妈妈最显怀的特征，也就是胖肚子随着胎儿在妈妈肚子里一天天的发育，那么妈妈的肚子也就会慢慢的变得，在这个时候，孕妈妈隆起的肚子也就会非常的明显了，我们称之为显怀，那么每个妈妈都会经历喜欢这样的事情，大约在几个月孕妈妈的肚子才会喜欢那么喜欢的原因到底是什么？\n" +
+                "\n" +
+                "显怀还是需要一定的时间，那么在正常的情况下，孕妈妈怀孕到达四个月之后，肚子也就会慢慢的大起来了，大约在这个时候也就是简化的一个时候了，但是喜欢也是因人而异的，之所以怀孕四个月以后再显怀原因是比较简单的，因为在怀孕的前三个月胎儿在妈妈的肚子里不安全，另一个重要的原因就是因为怀孕前期的三个月妈妈不适应怀孕，因此有着巨大的一个妊娠的反应，从而导致妈妈的胃口不好，身体非常的虚，肚子也就会增大，看起来并不是很明显。\n" +
+                "\n" +
+                "在一般情况下影响到孕妈妈先还的原因也是有一些的，第一个就是遗传因素的影响，宝宝的大小身高一般和父母其实是差不多的，胎儿的大小也就会受到妈妈自身的一个条件的影响，那么这也就是比较正常的范围，身材娇小的妈妈，可能印度普遍会偏小一点，身材肥胖的孕肚也就会比较大。\n" +
+                "\n" +
+                "在正常情况下，那么在别的因素都是有着一定的情况下，因为妈妈的羊水较多，那么妈妈的肚子也就会比较大，如果是羊水比较少的时候，孕妈妈的肚子也就会小一些，羊水最大的一个垂直深度在三厘米到8厘米左右的一个正常值，孕妈妈在产检的时候也就能够知道自己的羊水的情况。\n" +
+                "\n" +
+                "妈妈的营养摄入和生活的习惯也就会影响到妈妈的肚子在响，胎儿的营养都是源于母体，如果是在怀孕的时候营养摄入的少，那么就会造成营养不良，因此也就会影响到宝宝的发育，有的妈妈在饮食上控制的非常的好，摄入的营养会被宝宝吸收，这样的妈妈肚子也就会比较小，如果是妈妈怀孕前有吸烟喝酒的行为，并且怀孕以后还在坚持的话，对于宝宝的发育就会带来很大的影响，慢慢的肚子要比正常人小一些。";
         KeyWordComputer kwc = new KeyWordComputer(10);
-        Iterator it = kwc.computeArticleTfidf(title,content).iterator();
+        Iterator it = kwc.computeArticleTfidf(content).iterator();
         StringBuffer value = new StringBuffer();
         int count = 0;
         while(it.hasNext()) {
@@ -145,7 +125,7 @@ public class NewsController {
             {
                 int x = 0;
                 while (val[1][x]!=0){
-                    x++;
+                   x++;
                 }
                 val[1][x]=key2.getFreq();
                 System.out.println("国内" + key2.getFreq());
@@ -270,7 +250,8 @@ public class NewsController {
                 x++;
             }
         }
-            /*case 1:System.out.println("国内");break;
+        switch (max(v)){
+            case 1:System.out.println("国内");break;
             case 2:System.out.println("国际");break;
             case 3:System.out.println("军事");break;
             case 4:System.out.println("财经");break;
@@ -281,116 +262,20 @@ public class NewsController {
             case 9:System.out.println("游戏");break;
             case 10:System.out.println("女人");break;
             case 11:System.out.println("汽车");break;
-            case 12:System.out.println("房产");break;*/
-        return max(v);
-
-
-
-    }
-    @RequestMapping(path = {"/news/{newsId}"}, method = {RequestMethod.GET})
-    public String newsDetail(@PathVariable("newsId") int newsId, Model model) {
-        News news = newsService.getById(newsId);
-        if (news != null) {
-            int localUserId = hostHolder.getUser() != null ? hostHolder.getUser().getId() : 0;
-            if (localUserId != 0) {
-                model.addAttribute("like", likeService.getLikeStatus(localUserId, EntityType.ENTITY_NEWS, news.getId()));
-            } else {
-                model.addAttribute("like", 0);
-            }
-            // 评论
-            List<Comment> comments = commentService.getCommentsByEntity(news.getId(), EntityType.ENTITY_NEWS);
-            List<ViewObject> commentVOs = new ArrayList<ViewObject>();
-            for (Comment comment : comments) {
-                ViewObject vo = new ViewObject();
-                vo.set("comment", comment);
-                vo.set("user", userService.getUser(comment.getUserId()));
-                commentVOs.add(vo);
-            }
-            model.addAttribute("comments", commentVOs);
+            case 12:System.out.println("房产");break;
         }
-        model.addAttribute("news", news);
-        model.addAttribute("owner", userService.getUser(news.getUserId()));
-        return "detail";
+
+
+
     }
-
-    @RequestMapping(path = {"/addComment"}, method = {RequestMethod.POST})
-    public String addComment(@RequestParam("newsId") int newsId,
-                             @RequestParam("content") String content) {
+    public static void main(String[] args) {
+        classifyTest ct = new classifyTest();
         try {
-            content = HtmlUtils.htmlEscape(content);
-            // 过滤content
-            Comment comment = new Comment();
-            comment.setUserId(hostHolder.getUser().getId());
-            comment.setContent(content);
-            comment.setEntityId(newsId);
-            comment.setEntityType(EntityType.ENTITY_NEWS);
-            comment.setCreatedDate(new Date());
-            comment.setStatus(0);
-
-            commentService.addComment(comment);
-            // 更新news里的评论数量
-            int count = commentService.getCommentCount(comment.getEntityId(), comment.getEntityType());
-            newsService.updateCommentCount(comment.getEntityId(), count);
-            // 怎么异步化
-        } catch (Exception e) {
-            logger.error("增加评论失败" + e.getMessage());
-        }
-        return "redirect:/news/" + String.valueOf(newsId);
-    }
-
-
-    @RequestMapping(path = {"/image"}, method = {RequestMethod.GET})
-    @ResponseBody
-    public void getImage(@RequestParam("name") String imageName,
-                         HttpServletResponse response) {
-        try {
-            response.setContentType("image/jpeg");
-            StreamUtils.copy(new FileInputStream(new
-                    File(ToutiaoUtil.IMAGE_DIR + imageName)), response.getOutputStream());
-        } catch (Exception e) {
-            logger.error("读取图片错误" + imageName + e.getMessage());
-        }
-    }
-
-    @RequestMapping(path = {"/uploadImage/"}, method = {RequestMethod.POST})
-    @ResponseBody
-    public String uploadImage(@RequestParam("file") MultipartFile file) {
-        try {
-            String fileUrl = newsService.saveImage(file);
-            //String fileUrl = qiniuService.saveImage(file);
-            if (fileUrl == null) {
-                return ToutiaoUtil.getJSONString(1, "上传图片失败");
-            }
-            return ToutiaoUtil.getJSONString(0, fileUrl);
-        } catch (Exception e) {
-            logger.error("上传图片失败" + e.getMessage());
-            return ToutiaoUtil.getJSONString(1, "上传失败");
-        }
-    }
-
-    @RequestMapping(path = {"/user/addNews/"}, method = {RequestMethod.POST})
-    @ResponseBody
-    public String addNews(@RequestParam("image") String image,
-                          @RequestParam("title") String title,
-                          @RequestParam("content") String content) {
-        try {
-            News news = new News();
-            news.setModuleId(demo(title,content));
-            news.setCreatedDate(new Date());
-            news.setTitle(title);
-            news.setImage(image);
-            news.setContent(content);
-            if (hostHolder.getUser() != null) {
-                news.setUserId(hostHolder.getUser().getId());
-            } else {
-                // 设置一个匿名用户
-                news.setUserId(3);
-            }
-            newsService.addNews(news);
-            return ToutiaoUtil.getJSONString(0);
-        } catch (Exception e) {
-            logger.error("添加资讯失败" + e.getMessage());
-            return ToutiaoUtil.getJSONString(1, "发布失败");
+            ct.demo();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
+
+

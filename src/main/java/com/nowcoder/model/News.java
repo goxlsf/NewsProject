@@ -11,7 +11,7 @@ public class News {
 
   private String title;
 
-  private String link;
+  private String content;
 
   private String image;
 
@@ -19,9 +19,19 @@ public class News {
 
   private int commentCount;
 
+  public int getModuleId() {
+    return moduleId;
+  }
+
+  public void setModuleId(int moduleId) {
+    this.moduleId = moduleId;
+  }
+
   private Date createdDate;
 
   private int userId;
+
+  private int moduleId;
 
   public int getId() {
     return id;
@@ -39,12 +49,12 @@ public class News {
     this.title = title;
   }
 
-  public String getLink() {
-    return link;
+  public String getContent() {
+    return content;
   }
 
-  public void setLink(String link) {
-    this.link = link;
+  public void setContent(String content) {
+    this.content = content;
   }
 
   public String getImage() {

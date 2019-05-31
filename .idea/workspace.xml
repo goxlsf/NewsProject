@@ -1,763 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4b2ff07-a197-4037-8283-51a204e51755" name="Default Changelist" comment="第一次提交，没有新闻分类和新闻推荐">
-      <change afterPath="$PROJECT_DIR$/../src/main/java/com/nowcoder/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/com/nowcoder/controller/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/com/nowcoder/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/com/nowcoder/controller/SettingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/com/nowcoder/dao/LoginTicketDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/com/nowcoder/dao/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/com/nowcoder/interceptor/LoginRequiredInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/com/nowcoder/interceptor/PassportInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/com/nowcoder/service/ToutiaoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/java/com/nowcoder/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/resources/static/scripts/main/base/base.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/resources/static/scripts/main/base/event.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/resources/static/scripts/main/base/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/resources/static/scripts/main/base/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/main/base/leader.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/nowcoder/ToutiaoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/com/nowcoder/ToutiaoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/nowcoder/configuration/ToutiaoWebConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/com/nowcoder/configuration/ToutiaoWebConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/nowcoder/model/Admin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/nowcoder/model/AdminLoginTicket.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/nowcoder/model/HostHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/com/nowcoder/model/HostHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/nowcoder/model/LoginTicket.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/com/nowcoder/model/LoginTicket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/nowcoder/model/OptionProject.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/nowcoder/model/People.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/nowcoder/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/com/nowcoder/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/nowcoder/model/Voteoption.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/com/nowcoder/util/ToutiaoUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/com/nowcoder/util/ToutiaoUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/com/nowcoder/dao/OptionDAO.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/com/nowcoder/dao/UserDAO.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/com/nowcoder/dao/VoteDAO.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/codropsicons/codropsicons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/codropsicons/codropsicons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/codropsicons/codropsicons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/codropsicons/codropsicons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/codropsicons/license.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/font-awesome-4.2.0/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/images/img/related/PerspectiveNavigation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/images/img/related/sidebartransitions.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/images/img/user1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/js/classie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/js/main2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/js/main3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/js/main4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/js/snap.svg-min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/scripts/classie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/scripts/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/scripts/main/component/popup.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/resources/static/scripts/main/component/popup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/scripts/main/component/popupLogin.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/resources/static/scripts/main/component/popupLogin.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/scripts/main/site/home.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/resources/static/scripts/main/site/home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/scripts/main2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/scripts/main3.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/scripts/main4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/scripts/snap.svg-min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/.github/ISSUE_TEMPLATE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/DONATORS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/Gruntfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/_config.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/bootstrap-table.jquery.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/bootstrap-table-locale-all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/bootstrap-table-locale-all.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/bootstrap-table.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/bootstrap-table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/bootstrap-table.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/bootstrap-table.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/accent-neutralise/bootstrap-table-accent-neutralise.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/accent-neutralise/bootstrap-table-accent-neutralise.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/angular/bootstrap-table-angular.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/angular/bootstrap-table-angular.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/auto-refresh/bootstrap-table-auto-refresh.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/auto-refresh/bootstrap-table-auto-refresh.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/auto-refresh/bootstrap-table-auto-refresh.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/click-edit-row/bootstrap-table-click-edit-row.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/click-edit-row/bootstrap-table-click-edit-row.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/click-edit-row/bootstrap-table-click-edit-row.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/cookie/bootstrap-table-cookie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/cookie/bootstrap-table-cookie.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/copy-rows/bootstrap-table-copy-rows.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/copy-rows/bootstrap-table-copy-rows.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/defer-url/bootstrap-table-defer-url.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/defer-url/bootstrap-table-defer-url.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/editable/bootstrap-table-editable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/editable/bootstrap-table-editable.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/export/bootstrap-table-export.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/export/bootstrap-table-export.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/filter-control/bootstrap-table-filter-control.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/filter-control/bootstrap-table-filter-control.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/filter-control/bootstrap-table-filter-control.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/filter/bootstrap-table-filter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/filter/bootstrap-table-filter.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/flat-json/bootstrap-table-flat-json.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/flat-json/bootstrap-table-flat-json.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/group-by-v2/bootstrap-table-group-by.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/group-by-v2/bootstrap-table-group-by.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/group-by-v2/bootstrap-table-group-by.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/group-by/bootstrap-table-group-by.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/group-by/bootstrap-table-group-by.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/group-by/bootstrap-table-group-by.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/i18n-enhance/bootstrap-table-i18n-enhance.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/i18n-enhance/bootstrap-table-i18n-enhance.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/key-events/bootstrap-table-key-events.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/key-events/bootstrap-table-key-events.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/mobile/bootstrap-table-mobile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/mobile/bootstrap-table-mobile.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/multi-column-toggle/bootstrap-table-multi-toggle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/multi-column-toggle/bootstrap-table-multi-toggle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/multiple-search/bootstrap-table-multiple-search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/multiple-search/bootstrap-table-multiple-search.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/multiple-sort/bootstrap-table-multiple-sort.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/multiple-sort/bootstrap-table-multiple-sort.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/natural-sorting/bootstrap-table-natural-sorting.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/natural-sorting/bootstrap-table-natural-sorting.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/page-jumpto/bootstrap-table-jumpto.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/page-jumpto/bootstrap-table-jumpto.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/page-jumpto/bootstrap-table-jumpto.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/print/bootstrap-table-print.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/print/bootstrap-table-print.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/reorder-columns/bootstrap-table-reorder-columns.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/reorder-columns/bootstrap-table-reorder-columns.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/reorder-rows/bootstrap-table-reorder-rows.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/reorder-rows/bootstrap-table-reorder-rows.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/reorder-rows/bootstrap-table-reorder-rows.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/resizable/bootstrap-table-resizable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/resizable/bootstrap-table-resizable.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/select2-filter/bootstrap-table-select2-filter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/select2-filter/bootstrap-table-select2-filter.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/sticky-header/bootstrap-table-sticky-header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/sticky-header/bootstrap-table-sticky-header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/sticky-header/bootstrap-table-sticky-header.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/toolbar/bootstrap-table-toolbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/toolbar/bootstrap-table-toolbar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/tree-column/bootstrap-table-tree-column.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/tree-column/bootstrap-table-tree-column.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/tree-column/bootstrap-table-tree-column.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/treegrid/bootstrap-table-treegrid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/extensions/treegrid/bootstrap-table-treegrid.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-af-ZA.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-af-ZA.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-ar-SA.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-ar-SA.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-ca-ES.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-ca-ES.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-cs-CZ.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-cs-CZ.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-da-DK.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-da-DK.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-de-DE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-de-DE.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-el-GR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-el-GR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-en-US.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-en-US.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-es-AR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-es-AR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-es-CL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-es-CL.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-es-CR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-es-CR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-es-ES.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-es-ES.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-es-MX.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-es-MX.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-es-NI.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-es-NI.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-es-SP.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-es-SP.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-et-EE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-et-EE.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-eu-EU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-eu-EU.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-fa-IR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-fa-IR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-fr-BE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-fr-BE.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-fr-FR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-fr-FR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-he-IL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-he-IL.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-hr-HR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-hr-HR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-hu-HU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-hu-HU.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-id-ID.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-id-ID.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-it-IT.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-it-IT.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-ja-JP.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-ja-JP.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-ka-GE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-ka-GE.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-ko-KR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-ko-KR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-ms-MY.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-ms-MY.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-nb-NO.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-nb-NO.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-nl-NL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-nl-NL.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-pl-PL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-pl-PL.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-pt-BR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-pt-BR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-pt-PT.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-pt-PT.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-ro-RO.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-ro-RO.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-ru-RU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-ru-RU.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-sk-SK.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-sk-SK.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-sv-SE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-sv-SE.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-th-TH.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-th-TH.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-tr-TR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-tr-TR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-uk-UA.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-uk-UA.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-ur-PK.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-ur-PK.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-uz-Latn-UZ.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-uz-Latn-UZ.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-vi-VN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-vi-VN.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-zh-CN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-zh-TW.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/dist/locale/bootstrap-table-zh-TW.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/en.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/en/documentation/column-options.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/en/documentation/events.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/en/documentation/localizations.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/en/documentation/methods.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/en/documentation/table-options.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/en/donate.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/en/faq/faq.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/en/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/en/getting-started/download.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/en/getting-started/grunt.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/en/getting-started/usage.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/en/getting-started/whats-include.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/en/home/feature.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/es.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/es/documentation/column-options.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/es/documentation/events.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/es/documentation/localizations.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/es/documentation/methods.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/es/documentation/table-options.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/es/donate.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/es/faq/faq.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/es/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/es/getting-started/download.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/es/getting-started/grunt.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/es/getting-started/usage.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/es/getting-started/whats-include.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/es/home/feature.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/zh-cn.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/zh-cn/documentation/column-options.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/zh-cn/documentation/events.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/zh-cn/documentation/localizations.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/zh-cn/documentation/methods.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/zh-cn/documentation/table-options.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/zh-cn/donate.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/zh-cn/faq/faq.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/zh-cn/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/zh-cn/getting-started/download.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/zh-cn/getting-started/grunt.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/zh-cn/getting-started/usage.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/zh-cn/getting-started/whats-include.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_i18n/zh-cn/home/feature.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_includes/footer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_includes/header.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_includes/latest-release.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_includes/nav.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_includes/social-buttons.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_layouts/default.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_layouts/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_plugins/markdown-tag.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/_plugins/multiple-languages.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/apple-touch-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/bootstrap/css/bootstrap-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/bootstrap/css/bootstrap-theme.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/bootstrap/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/bootstrap/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/bootstrap/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/bootstrap/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/bootstrap/js/npm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/css/docs.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/css/sidenav.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/flash/ZeroClipboard.swf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/images/alipay.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/images/alipayLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/images/paypalLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/images/weixin.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/images/weixinLogo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/js/common.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/js/customize.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/js/docs.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/js/ie-emulation-modes-warning.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/js/ie10-viewport-bug-workaround.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/js/ie8-responsive-file-warning.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/js/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/assets/js/sidenav.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/data/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/data/data1/demo.response.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/data/data2/demo.response.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/data/data3/demo.response.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/data/data4/demo.response.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/data/data5/demo.response.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/data/extensions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/bootstrap-table-locale-all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/bootstrap-table-locale-all.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/bootstrap-table.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/bootstrap-table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/bootstrap-table.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/bootstrap-table.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/accent-neutralise/bootstrap-table-accent-neutralise.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/accent-neutralise/bootstrap-table-accent-neutralise.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/angular/bootstrap-table-angular.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/angular/bootstrap-table-angular.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/auto-refresh/bootstrap-table-auto-refresh.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/auto-refresh/bootstrap-table-auto-refresh.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/auto-refresh/bootstrap-table-auto-refresh.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/click-edit-row/bootstrap-table-click-edit-row.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/click-edit-row/bootstrap-table-click-edit-row.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/click-edit-row/bootstrap-table-click-edit-row.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/cookie/bootstrap-table-cookie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/cookie/bootstrap-table-cookie.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/copy-rows/bootstrap-table-copy-rows.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/copy-rows/bootstrap-table-copy-rows.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/defer-url/bootstrap-table-defer-url.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/defer-url/bootstrap-table-defer-url.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/editable/bootstrap-table-editable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/editable/bootstrap-table-editable.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/export/bootstrap-table-export.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/export/bootstrap-table-export.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/filter-control/bootstrap-table-filter-control.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/filter-control/bootstrap-table-filter-control.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/filter-control/bootstrap-table-filter-control.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/filter/bootstrap-table-filter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/filter/bootstrap-table-filter.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/flat-json/bootstrap-table-flat-json.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/flat-json/bootstrap-table-flat-json.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/group-by-v2/bootstrap-table-group-by.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/group-by-v2/bootstrap-table-group-by.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/group-by-v2/bootstrap-table-group-by.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/group-by/bootstrap-table-group-by.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/group-by/bootstrap-table-group-by.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/group-by/bootstrap-table-group-by.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/i18n-enhance/bootstrap-table-i18n-enhance.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/i18n-enhance/bootstrap-table-i18n-enhance.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/key-events/bootstrap-table-key-events.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/key-events/bootstrap-table-key-events.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/mobile/bootstrap-table-mobile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/mobile/bootstrap-table-mobile.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/multi-column-toggle/bootstrap-table-multi-toggle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/multi-column-toggle/bootstrap-table-multi-toggle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/multiple-search/bootstrap-table-multiple-search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/multiple-search/bootstrap-table-multiple-search.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/multiple-sort/bootstrap-table-multiple-sort.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/multiple-sort/bootstrap-table-multiple-sort.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/natural-sorting/bootstrap-table-natural-sorting.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/natural-sorting/bootstrap-table-natural-sorting.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/page-jumpto/bootstrap-table-jumpto.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/page-jumpto/bootstrap-table-jumpto.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/page-jumpto/bootstrap-table-jumpto.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/print/bootstrap-table-print.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/print/bootstrap-table-print.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/reorder-columns/bootstrap-table-reorder-columns.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/reorder-columns/bootstrap-table-reorder-columns.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/reorder-rows/bootstrap-table-reorder-rows.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/reorder-rows/bootstrap-table-reorder-rows.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/reorder-rows/bootstrap-table-reorder-rows.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/resizable/bootstrap-table-resizable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/resizable/bootstrap-table-resizable.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/select2-filter/bootstrap-table-select2-filter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/select2-filter/bootstrap-table-select2-filter.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/sticky-header/bootstrap-table-sticky-header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/sticky-header/bootstrap-table-sticky-header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/sticky-header/bootstrap-table-sticky-header.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/toolbar/bootstrap-table-toolbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/toolbar/bootstrap-table-toolbar.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/tree-column/bootstrap-table-tree-column.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/tree-column/bootstrap-table-tree-column.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/tree-column/bootstrap-table-tree-column.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/treegrid/bootstrap-table-treegrid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/extensions/treegrid/bootstrap-table-treegrid.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-af-ZA.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-af-ZA.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-ar-SA.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-ar-SA.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-ca-ES.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-ca-ES.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-cs-CZ.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-cs-CZ.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-da-DK.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-da-DK.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-de-DE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-de-DE.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-el-GR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-el-GR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-en-US.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-en-US.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-es-AR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-es-AR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-es-CL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-es-CL.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-es-CR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-es-CR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-es-ES.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-es-ES.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-es-MX.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-es-MX.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-es-NI.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-es-NI.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-es-SP.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-es-SP.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-et-EE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-et-EE.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-eu-EU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-eu-EU.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-fa-IR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-fa-IR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-fr-BE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-fr-BE.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-fr-FR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-fr-FR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-he-IL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-he-IL.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-hr-HR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-hr-HR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-hu-HU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-hu-HU.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-id-ID.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-id-ID.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-it-IT.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-it-IT.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-ja-JP.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-ja-JP.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-ka-GE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-ka-GE.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-ko-KR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-ko-KR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-ms-MY.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-ms-MY.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-nb-NO.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-nb-NO.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-nl-NL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-nl-NL.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-pl-PL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-pl-PL.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-pt-BR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-pt-BR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-pt-PT.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-pt-PT.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-ro-RO.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-ro-RO.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-ru-RU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-ru-RU.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-sk-SK.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-sk-SK.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-sv-SE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-sv-SE.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-th-TH.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-th-TH.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-tr-TR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-tr-TR.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-uk-UA.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-uk-UA.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-ur-PK.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-ur-PK.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-uz-Latn-UZ.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-uz-Latn-UZ.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-vi-VN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-vi-VN.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-zh-CN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-zh-CN.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-zh-TW.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/dist/locale/bootstrap-table-zh-TW.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/documentation.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/donate.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/examples.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/extensions.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/faq.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/getting-started.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/index.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/docs/sitemap.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/bootstrap-table.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/bootstrap-table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/accent-neutralise/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/accent-neutralise/bootstrap-table-accent-neutralise.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/accent-neutralise/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/angular/bootstrap-table-angular.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/auto-refresh/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/auto-refresh/bootstrap-table-auto-refresh.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/auto-refresh/bootstrap-table-auto-refresh.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/auto-refresh/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/click-edit-row/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/click-edit-row/bootstrap-table-click-edit-row.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/click-edit-row/bootstrap-table-click-edit-row.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/cookie/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/cookie/bootstrap-table-cookie.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/cookie/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/copy-rows/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/copy-rows/bootstrap-table-copy-rows.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/copy-rows/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/defer-url/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/defer-url/bootstrap-table-defer-url.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/defer-url/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/editable/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/editable/bootstrap-table-editable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/editable/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/export/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/export/bootstrap-table-export.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/export/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/filter-control/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/filter-control/bootstrap-table-filter-control.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/filter-control/bootstrap-table-filter-control.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/filter-control/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/filter/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/filter/bootstrap-table-filter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/filter/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/flat-json/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/flat-json/bootstrap-table-flat-json.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/flat-json/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/group-by-v2/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/group-by-v2/bootstrap-table-group-by.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/group-by-v2/bootstrap-table-group-by.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/group-by-v2/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/group-by/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/group-by/bootstrap-table-group-by.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/group-by/bootstrap-table-group-by.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/group-by/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/i18n-enhance/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/i18n-enhance/bootstrap-table-i18n-enhance.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/i18n-enhance/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/key-events/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/key-events/bootstrap-table-key-events.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/key-events/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/mobile/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/mobile/bootstrap-table-mobile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/mobile/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/multi-column-toggle/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/multi-column-toggle/bootstrap-table-multi-toggle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/multi-column-toggle/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/multiple-search/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/multiple-search/bootstrap-table-multiple-search.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/multiple-search/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/multiple-selection-row/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/multiple-selection-row/bootstrap-table-multiple-selection-row.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/multiple-selection-row/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/multiple-sort/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/multiple-sort/bootstrap-table-multiple-sort.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/multiple-sort/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/natural-sorting/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/natural-sorting/bootstrap-table-natural-sorting.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/natural-sorting/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/page-jumpto/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/page-jumpto/bootstrap-table-jumpto.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/page-jumpto/bootstrap-table-jumpto.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/print/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/print/bootstrap-table-print.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/reorder-columns/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/reorder-columns/bootstrap-table-reorder-columns.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/reorder-columns/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/reorder-rows/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/reorder-rows/bootstrap-table-reorder-rows.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/reorder-rows/bootstrap-table-reorder-rows.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/reorder-rows/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/resizable/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/resizable/bootstrap-table-resizable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/resizable/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/select2-filter/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/select2-filter/bootstrap-table-select2-filter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/select2-filter/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/sticky-header/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/sticky-header/bootstrap-table-sticky-header.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/sticky-header/bootstrap-table-sticky-header.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/sticky-header/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/toolbar/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/toolbar/bootstrap-table-toolbar.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/toolbar/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/tree-column/bootstrap-table-tree-column.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/tree-column/bootstrap-table-tree-column.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/tree-column/bootstrap-table-tree-column.less" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/tree-column/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/tree-column/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/treegrid/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/treegrid/bootstrap-table-treegrid.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/extensions/treegrid/extension.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-af-ZA.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-ar-SA.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-ca-ES.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-cs-CZ.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-da-DK.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-de-DE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-el-GR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-en-US.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-en-US.js.template" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-es-AR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-es-CL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-es-CR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-es-ES.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-es-MX.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-es-NI.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-es-SP.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-et-EE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-eu-EU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-fa-IR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-fr-BE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-fr-FR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-he-IL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-hr-HR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-hu-HU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-id-ID.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-it-IT.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-ja-JP.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-ka-GE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-ko-KR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-ms-MY.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-nb-NO.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-nl-NL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-pl-PL.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-pt-BR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-pt-PT.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-ro-RO.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-ru-RU.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-sk-SK.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-sv-SE.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-th-TH.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-tr-TR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-uk-UA.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-ur-PK.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-uz-Latn-UZ.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-vi-VN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-zh-CN.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap-table/src/locale/bootstrap-table-zh-TW.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap/css/bootstrap-theme.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap/css/bootstrap-theme.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap/css/bootstrap-theme.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap/css/bootstrap-theme.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap/css/bootstrap.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap/css/bootstrap.min.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/bootstrap/js/npm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/demo.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/echarts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/echarts.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/jquery/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/jquery/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/jquery/jquery插件库.url" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/jquery/www.jq22.com.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/menu_bubble.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/menu_cornerbox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/menu_cornerbox_nested.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/menu_cornermorph.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/menu_elastic.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/menu_sideslide.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/menu_topexpand.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/menu_topside.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/menu_wave.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/normalize.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/static/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/resources/static/styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/addMod.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/addModel.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/addVote.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/admin.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/adminUser.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/adminheader.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/footer.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/header.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/home.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/option.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/show.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/userMod.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/templates/userheader.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/DataTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/css/demo.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/css/menu_bubble.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/css/menu_cornerbox.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/css/menu_cornerbox_nested.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/css/menu_cornermorph.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/css/menu_elastic.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/css/menu_sideslide.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/css/menu_topexpand.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/css/menu_topside.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/css/menu_wave.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/css/normalize.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/elastic.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/fonts/codropsicons/codropsicons.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/fonts/codropsicons/codropsicons.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/fonts/codropsicons/codropsicons.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/fonts/codropsicons/codropsicons.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/fonts/codropsicons/license.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/fonts/font-awesome-4.2.0/css/font-awesome.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/fonts/font-awesome-4.2.0/fonts/fontawesome-webfont.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/home.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/img/related/PerspectiveNavigation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/img/related/sidebartransitions.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/img/user1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/java/com/nowcoder/jQuery之家.url" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/test/resources/init-schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../src/test/resources/init-schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../toupiao.iml" beforeDir="false" />
+    <list default="true" id="c4b2ff07-a197-4037-8283-51a204e51755" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nowcoder/classifyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nowcoder/mergeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nowcoder/test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$" beforeDir="false" afterPath="$PROJECT_DIR$" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/controller/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/controller/NewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/dao/NewsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/dao/NewsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/dao/UserDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/dao/UserDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/model/News.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/model/News.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nowcoder/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nowcoder/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/nowcoder/dao/NewsDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/nowcoder/dao/NewsDAO.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/scripts/main/component/popupUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/scripts/main/component/popupUpload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nowcoder/InitDatabaseTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nowcoder/InitDatabaseTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/init-schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/init-schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/controller/NewsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/controller/NewsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/dao/NewsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/dao/NewsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/dao/NewsDAO.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/dao/NewsDAO.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/dao/UserDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/dao/UserDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/model/News.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/model/News.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nowcoder/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nowcoder/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mybatis-config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mybatis-config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/scripts/main/component/popupUpload.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/scripts/main/component/popupUpload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nowcoder/InitDatabaseTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/nowcoder/InitDatabaseTests.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/init-schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/init-schema.sql" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -777,49 +51,13 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/scripts/main/base/leader.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/styles/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10380">
-              <caret line="346" column="16" selection-start-line="346" selection-start-column="16" selection-end-line="346" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/header.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="925">
-              <caret line="69" column="39" lean-forward="true" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-480">
-              <caret line="17" column="62" lean-forward="true" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -830,10 +68,22 @@
     <findStrings>
       <find>mail</find>
       <find>nav</find>
+      <find>js-share</find>
+      <find>jsCpn2</find>
+      <find>js-link form-control</find>
+      <find>js-link</find>
+      <find>val</find>
+      <find>key2</find>
+      <find>getNews</find>
+      <find>链接不能为空</find>
+      <find>insery</find>
+      <find>link</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_COMMON_BRANCH" value="master" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -844,8 +94,26 @@
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/resources/static/scripts/main/base/leader.js" />
         <option value="$PROJECT_DIR$/src/main/resources/static/styles/style.css" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/header.html" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/styles/bootstrap.min.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nowcoder/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nowcoder/dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nowcoder/service/ClassifyService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nowcoder/service/TFIDF.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nowcoder/model/User.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/init-schema.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nowcoder/model/News.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/nowcoder/InitDatabaseTests.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/nowcoder/dao/NewsDAO.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/nowcoder/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/header.html" />
+        <option value="$PROJECT_DIR$/src/test/java/com/nowcoder/mergeTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/nowcoder/test.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/nowcoder/classifyTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nowcoder/controller/NewsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/nowcoder/dao/NewsDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/scripts/main/component/popupUpload.js" />
       </list>
     </option>
   </component>
@@ -863,7 +131,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -902,7 +169,33 @@
               <item name="牛客中级课第十课代码" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nowcoder" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="toutiao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="牛客中级课第十课代码" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nowcoder" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="toutiao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="牛客中级课第十课代码" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="toutiao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="牛客中级课第十课代码" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="toutiao" type="b2602c69:ProjectViewProjectNode" />
@@ -949,7 +242,9 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="styles" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="component" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="toutiao" type="b2602c69:ProjectViewProjectNode" />
@@ -959,10 +254,48 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="toutiao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="牛客中级课第十课代码" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="toutiao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="牛客中级课第十课代码" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="toutiao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="牛客中级课第十课代码" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nowcoder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="toutiao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="牛客中级课第十课代码" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="nowcoder" type="462c0819:PsiDirectoryNode" />
+              <item name="MultiThread.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="toutiao" type="b2602c69:ProjectViewProjectNode" />
+              <item name="牛客中级课第十课代码" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -993,7 +326,80 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.ToutiaoApplication">
+    <configuration name="mergeTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nowcoder.mergeTest" />
+      <module name="toutiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nowcoder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nowcoder.test" />
+      <module name="toutiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nowcoder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classifyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="toutiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nowcoder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nowcoder" />
+      <option name="MAIN_CLASS_NAME" value="com.nowcoder.classifyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="classifyTest.demo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="toutiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nowcoder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nowcoder" />
+      <option name="MAIN_CLASS_NAME" value="com.nowcoder.classifyTest" />
+      <option name="METHOD_NAME" value="demo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.demo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="toutiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nowcoder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nowcoder" />
+      <option name="MAIN_CLASS_NAME" value="com.nowcoder.test" />
+      <option name="METHOD_NAME" value="demo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ToutiaoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="toutiao" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.nowcoder.ToutiaoApplication" />
@@ -1001,6 +407,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.classifyTest.demo" />
+        <item itemvalue="JUnit.classifyTest" />
+        <item itemvalue="JUnit.test.demo" />
+        <item itemvalue="Application.mergeTest" />
+        <item itemvalue="Application.test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -1017,7 +432,9 @@
       <workItem from="1558858648363" duration="2186000" />
       <workItem from="1558870359457" duration="1197000" />
       <workItem from="1558943830175" duration="13972000" />
-      <workItem from="1558964466496" duration="3412000" />
+      <workItem from="1558964466496" duration="8874000" />
+      <workItem from="1559093374030" duration="11127000" />
+      <workItem from="1559182722623" duration="45964000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交，没有新闻分类和新闻推荐">
       <created>1558860309186</created>
@@ -1026,45 +443,99 @@
       <option name="project" value="LOCAL" />
       <updated>1558860309186</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="第二次提交，完成了导航栏">
+      <created>1559026740948</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1559026740948</updated>
+    </task>
+    <task id="LOCAL-00003" summary="第一次提交，没有新闻分类和新闻推荐">
+      <created>1559026795085</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1559026795085</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="classifyTest_demo - 2019.05.31 at 09h 02m 03s.xml">
+      <configuration name="classifyTest.demo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="classifyTest_demo - 2019.05.31 at 09h 05m 06s.xml">
+      <configuration name="classifyTest.demo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="classifyTest_demo - 2019.05.31 at 09h 21m 30s.xml">
+      <configuration name="classifyTest.demo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="classifyTest_demo - 2019.05.31 at 09h 22m 54s.xml">
+      <configuration name="classifyTest.demo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="classifyTest_demo - 2019.05.31 at 09h 45m 18s.xml">
+      <configuration name="classifyTest.demo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="classifyTest_demo - 2019.05.31 at 09h 57m 33s.xml">
+      <configuration name="classifyTest.demo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="classifyTest_demo - 2019.05.31 at 10h 00m 57s.xml">
+      <configuration name="classifyTest.demo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="classifyTest - 2019.05.31 at 10h 03m 06s.xml">
+      <configuration name="classifyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="classifyTest - 2019.05.31 at 10h 07m 26s.xml">
+      <configuration name="classifyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="classifyTest_demo - 2019.05.31 at 10h 08m 07s.xml">
+      <configuration name="classifyTest.demo" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25813000" />
+    <option name="totallyTimeSpent" value="88366000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="JRebel" side_tool="true" />
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info id="Web" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.26332623" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info id="Web" order="4" sideWeight="0.5016611" side_tool="true" weight="0.26599148" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49833888" visible="true" weight="0.2185501" />
+      <window_info id="Structure" order="6" sideWeight="0.5016611" side_tool="true" weight="0.26599148" />
       <window_info id="Designer" order="7" />
-      <window_info anchor="bottom" id="Problems" />
-      <window_info anchor="bottom" id="JRebel Executor" />
-      <window_info active="true" anchor="bottom" id="JRebel Console" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.3997773" />
+      <window_info id="JRebel" order="8" sideWeight="0.5016611" side_tool="true" weight="0.26599148" />
       <window_info anchor="bottom" id="Spring" order="0" weight="0.32962137" />
-      <window_info anchor="bottom" id="MyBatis Sql Log" order="1" weight="0.32962137" />
-      <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5010661" side_tool="true" weight="0.2951002" />
+      <window_info anchor="bottom" id="MyBatis Sql Log" order="1" sideWeight="0.49946696" weight="0.32962137" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32962137" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.5010661" side_tool="true" weight="0.32962137" />
       <window_info anchor="bottom" id="Docker" order="4" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="5" weight="0.32962137" />
-      <window_info anchor="bottom" id="Java Enterprise" order="6" />
+      <window_info anchor="bottom" id="Java Enterprise" order="6" weight="0.32962137" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="FindBugs-IDEA" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32962137" />
+      <window_info anchor="bottom" id="FindBugs-IDEA" order="9" weight="0.32962137" />
       <window_info anchor="bottom" id="Message" order="10" />
       <window_info anchor="bottom" id="Find" order="11" />
-      <window_info anchor="bottom" id="Run" order="12" sideWeight="0.4989339" weight="0.2951002" />
-      <window_info anchor="bottom" id="Debug" order="13" sideWeight="0.49946696" visible="true" weight="0.3997773" />
+      <window_info anchor="bottom" id="Run" order="12" sideWeight="0.4989339" weight="0.34743875" />
+      <window_info anchor="bottom" id="Debug" order="13" sideWeight="0.49946696" weight="0.32516703" />
       <window_info anchor="bottom" id="Cvs" order="14" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="15" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="16" />
+      <window_info anchor="bottom" id="TODO" order="16" weight="0.32962137" />
+      <window_info anchor="bottom" id="Problems" order="17" weight="0.32962137" />
+      <window_info active="true" anchor="bottom" id="JRebel Executor" order="18" sideWeight="0.4989339" visible="true" weight="0.32962137" />
+      <window_info anchor="bottom" id="JRebel Console" order="19" sideWeight="0.50053304" side_tool="true" weight="0.3997773" />
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Key Promoter X" order="2" />
@@ -1082,105 +553,429 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="第二次提交，完成了导航栏" />
     <MESSAGE value="第一次提交，没有新闻分类和新闻推荐" />
     <option name="LAST_COMMIT_MESSAGE" value="第一次提交，没有新闻分类和新闻推荐" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/nowcoder/classifyTest.java</url>
+          <line>252</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/nowcoder/controller/NewsController.java</url>
+          <line>378</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nowcoder/async/EventConsumer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nowcoder/model/Comment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="-674">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
+    <entry file="file://$PROJECT_DIR$/src/test/resources/init-schema.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        <state relative-caret-position="-2416">
+          <caret line="4" column="46" lean-forward="true" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/nowcoder/InitDatabaseTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="55" column="34" selection-start-line="55" selection-start-column="34" selection-end-line="55" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/nowcoder/dao/NewsDAO.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/nowcoder/ToutiaoApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/nowcoder/LikeServiceTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="e#851#852#0" expanded="true" />
+            <element signature="e#890#891#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nowcoder/async/handler/LoginExceptionHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/nowcoder/MultiThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="36" lean-forward="true" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        <state relative-caret-position="283">
+          <caret line="269" column="12" selection-start-line="269" selection-start-column="12" selection-end-line="269" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/ansj/ansj_seg/5.1.6/ansj_seg-5.1.6.jar!/org/ansj/splitWord/analysis/ToAnalysis.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="70" column="18" selection-start-line="70" selection-start-column="18" selection-end-line="70" selection-end-column="24" />
           <folding>
-            <element signature="e#1247#1248#0" expanded="true" />
-            <element signature="e#1300#1301#0" expanded="true" />
+            <element signature="e#2400#2401#0" expanded="true" />
+            <element signature="e#2455#2456#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.2.6.RELEASE/spring-test-4.2.6.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestMethodCallbacks.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.2.6.RELEASE/spring-test-4.2.6.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunBeforeTestClassCallbacks.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.2.6.RELEASE/spring-test-4.2.6.RELEASE.jar!/org/springframework/test/context/junit4/statements/RunAfterTestClassCallbacks.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.2.6.RELEASE/spring-test-4.2.6.RELEASE.jar!/org/springframework/test/context/junit4/SpringJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/JUnitCore.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="203" selection-start-line="203" selection-end-line="203" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/BlockJUnit4ClassRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="454">
+          <caret line="222" column="5" lean-forward="true" selection-start-line="222" selection-start-column="5" selection-end-line="222" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/java/jdk1.8/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="1465" selection-start-line="1465" selection-end-line="1465" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/ansj/ansj_seg/5.1.6/ansj_seg-5.1.6.jar!/org/ansj/app/keyword/Keyword.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="e#816#817#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#1306#1307#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/java/jdk1.8/src.zip!/java/util/HashSet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="203" selection-start-line="203" selection-end-line="203" />
+          <folding>
+            <element signature="e#7468#7469#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/java/jdk1.8/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="595" selection-start-line="595" selection-end-line="595" />
+          <folding>
+            <element signature="e#23682#23683#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/nowcoder/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="35" column="48" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/nowcoder/mergeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/nowcoder/classifyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="269" column="5" selection-start-line="28" selection-start-column="4" selection-end-line="269" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#demo#0;class#classifyTest#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/ansj/ansj_seg/5.1.6/ansj_seg-5.1.6.jar!/org/ansj/app/keyword/KeyWordComputer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1642">
+          <caret line="80" column="25" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+          <folding>
+            <element signature="e#2520#2521#0" expanded="true" />
+            <element signature="e#2579#2580#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/nowcoder/controller/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        <state relative-caret-position="-89">
+          <caret line="32" column="28" lean-forward="true" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nowcoder/util/MailSender.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nowcoder/controller/LikeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nowcoder/service/CommentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-137">
+          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nowcoder/service/LikeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-557">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nowcoder/service/MessageService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/nowcoder/ToutiaoApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nowcoder/service/QiniuService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="-1032">
+          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/scripts/main/base/upload.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/scripts/main/base/util.js">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nowcoder/service/ToutiaoService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="1" />
+        <state relative-caret-position="300">
+          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nowcoder/controller/SettingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nowcoder/controller/MessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-300">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nowcoder/service/TFIDF.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-331">
+          <caret line="27" column="26" lean-forward="true" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/scripts/main/base/base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="30" />
-        </state>
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/scripts/main/base/event.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/scripts/main/base/leader.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/scripts/main/base/upload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/scripts/main/base/util.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/scripts/main/component/component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4485" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/scripts/main/component/popup.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3001">
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/styles/style.css">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/scripts/main/component/popupLogin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10380">
-          <caret line="346" column="16" selection-start-line="346" selection-start-column="16" selection-end-line="346" selection-end-column="16" />
+        <state relative-caret-position="-4621" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nowcoder/model/HostHolder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#291#292#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/header.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nowcoder/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="69" column="39" lean-forward="true" selection-start-line="69" selection-start-column="39" selection-end-line="69" selection-end-column="39" />
+        <state relative-caret-position="250">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="e#1215#1216#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nowcoder/service/NewsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-480">
-          <caret line="17" column="62" lean-forward="true" selection-start-line="17" selection-start-column="62" selection-end-line="17" selection-end-column="62" />
+        <state relative-caret-position="310">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nowcoder/model/News.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1006">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
+          <folding>
+            <element signature="e#294#295#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#396#397#0" expanded="true" />
+            <element signature="e#661#662#0" expanded="true" />
+            <element signature="e#689#690#0" expanded="true" />
+            <element signature="e#789#790#0" expanded="true" />
+            <element signature="e#821#822#0" expanded="true" />
+            <element signature="e#913#914#0" expanded="true" />
+            <element signature="e#941#942#0" expanded="true" />
+            <element signature="e#1347#1348#0" expanded="true" />
+            <element signature="e#1387#1388#0" expanded="true" />
+            <element signature="e#1507#1508#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nowcoder/dao/NewsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/scripts/main/component/popupUpload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.0/mybatis-3.4.0.jar!/org/apache/ibatis/binding/MapperProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/nowcoder/controller/NewsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3012">
+          <caret line="374" column="68" lean-forward="true" selection-start-line="374" selection-start-column="68" selection-end-line="374" selection-end-column="68" />
         </state>
       </provider>
     </entry>

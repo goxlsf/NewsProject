@@ -51,6 +51,7 @@ public class UserService {
         String head = String.format("http://images.nowcoder.com/head/%dt.png", new Random().nextInt(1000));
         user.setHeadUrl(head);
         user.setPassword(ToutiaoUtil.MD5(password+user.getSalt()));
+        user.setPrefList("\"1\":{},\"2\":{},\"3\":{},\"4\":{},\"5\":{},\"6\":{},\"7\":{},\"8\":{},\"9\":{},\"10\":{},\"11\":{}");
         userDAO.addUser(user);
 
         // 登陆

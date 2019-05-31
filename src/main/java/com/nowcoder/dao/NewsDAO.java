@@ -1,7 +1,6 @@
 package com.nowcoder.dao;
 
 import com.nowcoder.model.News;
-import com.nowcoder.model.User;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;
@@ -12,11 +11,11 @@ import java.util.List;
 @Mapper
 public interface NewsDAO {
     String TABLE_NAME = "news";
-    String INSERT_FIELDS = " title, link, image, like_count, comment_count, created_date, user_id ";
+    String INSERT_FIELDS = " title, content, image, like_count, comment_count, created_date, user_id, module_id";
     String SELECT_FIELDS = " id, " + INSERT_FIELDS;
 
     @Insert({"insert into ", TABLE_NAME, "(", INSERT_FIELDS,
-            ") values (#{title},#{link},#{image},#{likeCount},#{commentCount},#{createdDate},#{userId})"})
+            ") values (#{title},#{content},#{image},#{likeCount},#{commentCount},#{createdDate},#{userId},#{moduleId})"})
     int addNews(News news);
 
     @Select({"select ", SELECT_FIELDS , " from ", TABLE_NAME, " where id=#{id}"})

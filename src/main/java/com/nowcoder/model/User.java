@@ -9,19 +9,29 @@ public class User {
     private String password;
     private String salt;
     private String headUrl;
+    private String prefList;
 
     public User() {
 
     }
+
     public User(String name) {
         this.name = name;
         this.password = "";
         this.salt = "";
         this.headUrl = "";
+        this.prefList = "";
     }
-
     public String getName() {
         return name;
+    }
+
+    public String getPrefList() {
+        return prefList;
+    }
+
+    public void setPrefList(String pref_list) {
+        this.prefList = pref_list;
     }
 
     public void setName(String name) {

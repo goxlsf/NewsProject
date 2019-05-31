@@ -1,12 +1,10 @@
 package com.nowcoder;
 
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import com.nowcoder.dao.CommentDAO;
 import com.nowcoder.dao.LoginTicketDAO;
 import com.nowcoder.dao.NewsDAO;
 import com.nowcoder.dao.UserDAO;
 import com.nowcoder.model.*;
-import com.nowcoder.service.CommentService;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -54,7 +52,7 @@ public class InitDatabaseTests {
             news.setLikeCount(i+1);
             news.setUserId(i+1);
             news.setTitle(String.format("TITLE{%d}", i));
-            news.setLink(String.format("http://www.nowcoder.com/%d.html", i));
+            news.setContent(String.format("http://www.nowcoder.com/%d.html", i));
             newsDAO.addNews(news);
 
             for (int j = 0; j < 3; ++j) {
